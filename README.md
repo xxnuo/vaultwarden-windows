@@ -22,7 +22,7 @@ bitwarden 服务器的开源实现 vaultwarden 的 Windows 部署
    cd output
    tar -cvf rootfs.tar.gz ./
    ```
-4. 现在获得了一个可以安装为 WSL 的一个 Alpine 系统包，可以自行调用 wsl.exe 安装，也可使用我下面的方法安装
+4. 现在获得了一个可以安装为 WSL 的一个 Alpine 系统包，可以使用我下面的方法安装，自行调用 `wsl.exe` 安装了可直接跳过到第九步启动
 5. 将 `rootfs.tar.gz` 拷贝到 Windows 系统目录中（目录自行选择）
 
    ```bash
