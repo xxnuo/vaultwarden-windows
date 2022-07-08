@@ -54,3 +54,10 @@ bitwarden 服务器的开源实现 vaultwarden 的 Windows 部署
    ./start.sh
    ```
 10. 屏幕会显示后台地址，比如我用的WSL1显示 [http://127.0.0.1:8000/](http://127.0.0.1:8000/) 访问没问题说明能用了，后续使用服务保持运行即可
+11. 在 Windows 下启动该服务的命令
+
+    ```bash
+    .\vaultwarden.exe run cd /;/start.sh
+    ```
+
+可以将 exe 路径改成绝对路径，然后设为计划任务/服务/pm2来使他保持运行，ojbk
