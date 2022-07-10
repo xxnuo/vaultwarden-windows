@@ -2,11 +2,47 @@
 
 bitwarden 服务器的开源实现 vaultwarden 的 Windows 部署
 
-[方式一：通过 WSL（1、2均可） 直接部署官方版本](#方式一通过-wsl12均可直接部署官方版本)
+[方式一：使用本仓库构建的二进制 exe 文件运行](#方式一使用本仓库构建的二进制-exe-文件运行)
 
-[方式二：使用本仓库构建二进制 exe 文件运行]() // TODO
+[方式二：通过 WSL（1、2均可） 直接部署官方版本](#方式二通过-wsl12均可直接部署官方版本)
 
-### 方式一：通过 WSL（1、2均可）直接部署官方版本
+
+## 方式一：使用本仓库构建的二进制 exe 文件运行
+
+### GitHub Action 自动构建 // TODO
+
+### 本地构建
+
+下载地址：[https://github.com/BigTear/vaultwarden-windows/releases](https://github.com/BigTear/vaultwarden-windows/releases)
+
+> 已集成官方构建的 web-vault ，开箱即用
+
+本地自行构建方法：
+
+1. 安装 Windows OpenSSL 并配置环境变量
+   > 参考方法：[windows上rust使用OpenSSL](https://blog.csdn.net/qq_44639125/article/details/124202994)
+
+2. 重启终端或 IDE ，执行
+   
+   ```bash
+   cargo build --features sqlite --release
+   ```
+   
+   主程序构建完成，位置 `arget\release\vaultwarden.exe`
+
+   其他构建选项和 web-vault 构建方法具体内容参考 [https://github.com/dani-garcia/vaultwarden/wiki/Building-binary](https://github.com/dani-garcia/vaultwarden/wiki/Building-binary) 自行构建即可
+
+3. 构建后目录结构参考
+
+   ```
+   .\
+   .\data            \\ 自行创建的文件夹
+   .\web-vault       \\ web 界面
+   .\vaultwarden.exe \\ 主程序
+   ```
+
+
+## 方式二：通过 WSL（1、2均可）直接部署官方版本
 
 按步骤执行下方代码即可
 
