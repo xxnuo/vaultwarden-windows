@@ -28,7 +28,7 @@ bitwarden 服务器的开源实现 vaultwarden 的 Windows 部署
    cargo build --features sqlite --release
    ```
    
-   主程序构建完成，位置 `arget\release\vaultwarden.exe`
+   主程序构建完成，位置 `target\release\vaultwarden.exe`
 
    其他构建选项和 web-vault 构建方法具体内容参考 [https://github.com/dani-garcia/vaultwarden/wiki/Building-binary](https://github.com/dani-garcia/vaultwarden/wiki/Building-binary) 自行构建即可
 
