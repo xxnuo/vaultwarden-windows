@@ -9,11 +9,13 @@ bitwarden 服务器的开源实现 vaultwarden 的 Windows 部署
 
 ## 方式一：使用本仓库构建的二进制 exe 文件运行
 
+## 下载 release 内的文件即可使用
+下载地址：[https://github.com/BigTear/vaultwarden-windows/releases](https://github.com/BigTear/vaultwarden-windows/releases)
+
 ### GitHub Action 自动构建 // TODO
 
-### 本地构建
+### 本地构建过程
 
-下载地址：[https://github.com/BigTear/vaultwarden-windows/releases](https://github.com/BigTear/vaultwarden-windows/releases)
 
 > 已集成官方构建的 web-vault ，开箱即用
 
