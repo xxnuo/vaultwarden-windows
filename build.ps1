@@ -7,6 +7,7 @@ Set-Location ..
 Remove-Item .\release\ -Recurse -Force
 mkdir release\vaultwarden-windows\data
 Copy-Item .\vaultwarden\target\release\vaultwarden.exe .\release\vaultwarden-windows\
+upx .\release\vaultwarden-windows\vaultwarden.exe
 # unzip web-vault
 tar -xzvf .\bw_web.tar.gz -C .\release\vaultwarden-windows\
 # pack files
